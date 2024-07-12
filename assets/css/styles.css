@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+:root {
+    --color-1: #5fb2ce;
+    --color-2: #72dcd4;
+    --color-3: #86c5da;
+    --color-4: #9acee0;
+    --color-5: #add8e6;
+    --color-6:#c1e1ec;
+    --color-black: #141414;
+    --color-white: #d2d2d2;
+    --color-gray: #1f1f1f;
+}
+
+body {
+    background-color: var(--color-black);
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    gap: 40px;
+    overflow-x: hidden;
+    display: none;
+}
+
+.bar {
+    background: linear-gradient(to left, var(--color-1), var(--color-6));
+    height: 4px;
+    width: 180px;
+}
+
+.name-title {
+    width: 100%;
+    text-align: left;
+    user-select: none;
+}
+
+.name-title p {
+    font-weight: lighter;
+    font-size: 164px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 100;
+    transition: all .2s ease-in-out;
+    user-select: none;
+}
+
+.navbar ul li a:hover {
+    font-weight: 400
+}
+
+/* Conteúdo projetos */
+
+.project-container {
+    width: 800px;
+    height: auto;
+}
+
+.arrow {
+    width: 100px;
+    height: 100px;
+    background-color: #5fb2ce;
+}
+
+.project-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 140px;
+}
+
+.card {
+    position: relative; /* Necessário para posicionamento absoluto interno */
+    width: 800px;
+    height: 400px;
+    background-color: var(--color-black);
+    overflow: hidden; /* Garante que o texto não ultrapasse os limites da div */
+}
+
+.card img {
+    width: 100%; /* Garante que a imagem preencha a div */
+    height: 100%; /* Garante que a imagem preencha a div */
+    object-fit: cover;
+    filter: brightness(0.5);
+    transition: all .5s;
+}
+
+.card img:hover {
+    filter: brightness(1);
+}
+
+.card-text {
+    position: absolute;
+    bottom: 10px; /* Distância do texto ao fundo */
+    left: 10px; /* Distância do texto à esquerda */
+    color: white;
+    padding: 10px; /* Espaçamento interno do texto */
+    user-select: none;
+}
+
+.card-text h2 {
+    margin-bottom: 10px;
+    font-size: 108px;
+    user-select: none;
+}   
+
+.card-text p {
+    font-size: 18px;
+    opacity: 0.8;
+    user-select: none;
+}
+
+.card:nth-child(2) .card-text{
+    margin-bottom: 10px;
+    font-size: 108px;
+    user-select: none;
+    text-align: right;
+}
+
+.card:nth-child(2) .card-text p {
+    font-size: 18px;
+    opacity: 0.8;
+    user-select: none;
+    text-align: right;
+}

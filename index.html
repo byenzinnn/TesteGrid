@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Teste grid</title>
+  </head>
+  <body onload="animeStart()">
+    <div class="container" id="container-1">
+      <div class="bar transformProject"></div>
+      <div class="name-title transformProject">
+        <p draggable="false">Isaac Kleimmann Graper</p>
+      </div>
+      <div class="navbar transformProject">
+        <ul>
+          <li class="nav-link transformProject"><a href="#" draggable="false" onclick="transformProject()">Projects</a></li>
+          <li class="nav-link transformProject"><a href="#" draggable="false">Contact</a></li>
+          <li class="nav-link transformProject"><a href="#" draggable="false">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-container">
+        <div class="arrow">
+            <img src="">
+            <img src="">
+        </div>
+        <div class="project-card">
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg" alt="">
+                <div class="card-text">
+                    <h2>Título do Projeto</h2>
+                    <p>Descrição do projeto...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg" alt="">
+                <div class="card-text">
+                    <h2>Título do Projeto</h2>
+                    <p>Descrição do projeto...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="./assets/js/anime.js" defer></script>
+  <script src="./assets/js/script.js"></script>
+</html>
