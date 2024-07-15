@@ -104,6 +104,7 @@ body {
     height: 400px;
     background-color: var(--color-black);
     overflow: hidden; /* Garante que o texto não ultrapasse os limites da div */
+    transition: all .5s ease-in-out;
 }
 
 .card img {
@@ -111,11 +112,35 @@ body {
     height: 100%; /* Garante que a imagem preencha a div */
     object-fit: cover;
     filter: brightness(0.5);
-    transition: all .5s;
+    transition: all .5s ease-in-out;
 }
 
-.card img:hover {
-    filter: brightness(1);
+.card:nth-child(1):hover {
+    .card-img {
+        filter: brightness(0.8);
+    }
+
+    .card-text p {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1s;
+    }
+
+    .card-text h2 {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all .8s;
+    }
+}
+
+.card:nth-child(2):hover {
+    .card-img {
+        filter: brightness(0.8);
+    }
+
+    .card-text p, h2 {
+        opacity: 1;
+    }
 }
 
 .card-text {
@@ -131,12 +156,15 @@ body {
     margin-bottom: 10px;
     font-size: 108px;
     user-select: none;
+    opacity: 0;
+    transform: translateX(-1000px);
 }   
 
 .card-text p {
     font-size: 18px;
-    opacity: 0.8;
+    opacity: 0;
     user-select: none;
+    transform: translateX(-1000px);
 }
 
 .card:nth-child(2) .card-text{
@@ -144,11 +172,12 @@ body {
     font-size: 108px;
     user-select: none;
     text-align: right;
+    transform: translateX(1000px);
 }
 
 .card:nth-child(2) .card-text p {
     font-size: 18px;
-    opacity: 0.8;
     user-select: none;
     text-align: right;
+    transform: translateX(1000px);
 }

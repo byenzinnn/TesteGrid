@@ -9,6 +9,5 @@ const transformProject = () => {
         opacity: [1, 0],
         easing: 'easeInOutSine',
         duration: 200
-    })
-    
+    });
 }
