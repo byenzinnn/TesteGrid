@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
       integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
@@ -17,7 +22,7 @@
     <title>Teste grid</title>
   </head>
   <body onload="animeStart()">
-    <div class="container" id="container-1">
+    <div class="title-container">
       <div class="bar transformProject"></div>
       <div class="name-title transformProject">
         <p draggable="false">Isaac Kleimmann Graper</p>
@@ -25,7 +30,7 @@
       <div class="navbar transformProject">
         <ul>
           <li class="nav-link transformProject">
-            <a href="#" draggable="false" onclick="transformProject()"
+            <a href="#" draggable="false" onclick="transformProject(event)"
               >Projects</a
             >
           </li>
@@ -38,28 +43,85 @@
         </ul>
       </div>
     </div>
-    <div class="project-container">
-      <div class="arrow">
-        <img src="" />
-        <img src="" />
+    <div class="project-container hide">
+      <div class="arrow hide" draggable="false" onclick="backToMain(event)">
+        <span class="material-symbols-outlined"> arrow_back_ios </span>
+        <span class="material-symbols-outlined"> arrow_back_ios </span>
       </div>
       <div class="project-card">
-        <div class="card">
-            <img class="card-img" src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg" alt="" />
-            <div class="card-text">
-                <h2>Título do Projeto</h2>
-                <p>Descrição do projeto...</p>
-            </div>
+        <div class="card left-anime">
+          <img
+            class="card-img"
+            src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg"
+            alt=""
+            draggable="false"
+          />
+          <div class="card-text">
+            <h2>Título do Projeto</h2>
+            <p>Descrição do projeto...</p>
+          </div>
         </div>
-        <div class="card">
-            <img class="card-img" src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg" alt="" />
-            <div class="card-text">
-                <h2>Título do Projeto</h2>
-                <p>Descrição do projeto...</p>
-            </div>
+        <div class="card right-anime">
+          <img
+            class="card-img"
+            src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg"
+            alt=""
+            draggable="false"
+          />
+          <div class="card-text">
+            <h2>Título do Projeto</h2>
+            <p>Descrição do projeto...</p>
+          </div>
         </div>
-    </div>
-    
+        <div class="card left-anime">
+          <img
+            class="card-img"
+            src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg"
+            alt=""
+            draggable="false"
+          />
+          <div class="card-text">
+            <h2>Título do Projeto</h2>
+            <p>Descrição do projeto...</p>
+          </div>
+        </div>
+        <div class="card right-anime">
+          <img
+            class="card-img"
+            src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg"
+            alt=""
+            draggable="false"
+          />
+          <div class="card-text">
+            <h2>Título do Projeto</h2>
+            <p>Descrição do projeto...</p>
+          </div>
+        </div>
+        <div class="card left-anime">
+          <img
+            class="card-img"
+            src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg"
+            alt=""
+            draggable="false"
+          />
+          <div class="card-text">
+            <h2>Título do Projeto</h2>
+            <p>Descrição do projeto...</p>
+          </div>
+        </div>
+        <div class="card right-anime">
+          <img
+            class="card-img"
+            src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg"
+            alt=""
+            draggable="false"
+          />
+          <div class="card-text">
+            <h2>Título do Projeto</h2>
+            <p>Descrição do projeto...</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="./assets/js/anime.js" defer></script>
